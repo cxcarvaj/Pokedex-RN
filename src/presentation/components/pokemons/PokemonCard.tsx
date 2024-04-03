@@ -10,7 +10,7 @@ interface PokemonCardProps {
 
 export const PokemonCard = ({pokemon}: PokemonCardProps) => {
   return (
-    <Card style={[styles.cardContainer]}>
+    <Card style={[styles.cardContainer, {backgroundColor: pokemon.color}]}>
       <Text style={styles.name} variant="bodyLarge" lineBreakMode="middle">
         {pokemon.name}
         {'\n#' + pokemon.id}
