@@ -4,21 +4,21 @@ export interface Pokemon {
   types: string[];
   avatar: string;
   sprites: string[];
+
   color: string;
 
-  //   stats: Stats;
-  //   height: number;
-  //   weight: number;
-  //   abilities: string[];
-  //   evolutions: string[];
-  //   moves: string[];
+  games: string[];
+  stats: Stat[];
+  abilities: string[];
+  moves: Move[];
 }
 
-// interface Stats {
-//   hp: number;
-//   attack: number;
-//   defense: number;
-//   specialAttack: number;
-//   specialDefense: number;
-//   speed: number;
-// }
+interface Stat {
+  name: string;
+  value: number;
+}
+
+interface Move {
+  name: string;
+  level: number;
+}
